@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gadget Valley - Electric Mosquito Swatter. শক্তিশালী ইলেকট্রিক মশার র‍্যাকেট। COD Available. দ্রুত ডেলিভারি।" />
+  <title>Gadget Valley | Electric Mosquito Swatter - মশার র‍্যাকেট</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3b81db',
+            'primary-dark': '#2563c0',
+            'primary-light': '#93c5fd',
+          },
+          fontFamily: {
+            siliguri: ['Hind Siliguri', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="font-siliguri bg-white text-gray-800">
+
+  <!-- LIVE ORDER NOTIFICATION -->
+  <div id="liveNotif" class="live-notif">
+    <img src="https://i.pravatar.cc/40?img=1" alt="user" class="rounded-full w-10 h-10 flex-shrink-0" />
+    <div>
+      <p class="text-sm font-semibold text-gray-800" id="notifText">রহিম সাহেব অর্ডার করেছেন!</p>
+      <p class="text-xs text-gray-400">এইমাত্র</p>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center shadow-md">
+          <i class="fa-solid fa-bolt text-white text-lg"></i>
+        </div>
+        <span class="text-xl font-bold text-primary tracking-tight">Gadget Valley</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="tel:+8801876505581" class="flex items-center gap-1 text-sm text-gray-600 hover:text-primary transition">
+          <i class="fa-solid fa-phone text-primary"></i>
+          <span class="hidden sm:inline font-medium">01876-505581</span>
+        </a>
+        <button onclick="openOrderForm()" class="bg-primary text-white text-sm px-4 py-2 rounded-full font-semibold shadow-lg hover:bg-primary-dark transition pulse-btn">
+          অর্ডার করুন
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- COUNTDOWN BANNER -->
+  <div class="bg-gradient-to-r from-red-500 to-rose-600 text-white text-center py-2 px-4">
+    <p class="text-sm font-semibold flex items-center justify-center flex-wrap gap-2">
+      <i class="fa-solid fa-fire"></i>
+      অফার শেষ হবে: <span id="countdownTimer" class="font-bold text-yellow-300 tabular-nums">00:00:00</span>
+      <span class="hidden sm:inline">|</span>
+      সীমিত স্টক: <span class="font-bold text-yellow-300" id="stockCount">৭</span> পিস বাকি!
+    </p>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section py-10 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+        <!-- Product Image -->
+        <div class="flex justify-center relative">
+          <div class="hero-img-container">
+            <img
+              src="https://m.media-amazon.com/images/I/51R9rxqXDdL._AC_UF1000,1000_QL80_.jpg"
+              alt="Electric Mosquito Swatter White"
+              class="hero-product-img"
+            />
+            <div class="discount-badge-hero">
+              <span class="text-xl font-black">২৬%</span>
+              <span class="text-xs font-semibold">ছাড়</span>
+            </div>
+            <div class="cod-badge-hero">
+              <i class="fa-solid fa-truck me-1"></i>COD Available
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="animate-fadeup">
+          <div class="inline-flex items-center gap-2 bg-green-100 text-green-700 text-xs font-bold px-3 py-1.5 rounded-full mb-3">
+            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse inline-block"></span>
+            স্টক আছে – এখনই অর্ডার করুন
+          </div>
+
+          <h1 class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-2">
+            ইলেকট্রিক মশার র‍্যাকেট <br />
+            <span class="text-primary">Electric Mosquito Swatter</span>
+          </h1>
+          <p class="text-gray-500 text-sm mb-4">রিচার্জেবল ব্যাটারি | USB চার্জিং | শক্তিশালী শক | হালকা ওজন</p>
+
+          <!-- Stars -->
+          <div class="flex items-center gap-2 mb-4">
+            <div class="flex text-yellow-400 text-sm">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span class="text-sm text-gray-500">(৪.৮/৫) • ১,২৩৪+ বিক্রয়</span>
+          </div>
+
+          <!-- Price Block -->
+          <div class="price-block mb-5">
+            <div class="flex items-end gap-3">
+              <span class="text-5xl font-black text-primary leading-none">৳৬৯৯</span>
+              <div class="flex flex-col mb-1">
+                <span class="text-lg text-gray-400 line-through">৳৯৫০</span>
+                <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-0.5 rounded-md">সেভ ৳২৫১</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trust Chips -->
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="trust-chip"><i class="fa-solid fa-truck text-primary me-1"></i>COD Available</span>
+            <span class="trust-chip"><i class="fa-solid fa-shield-halved text-primary me-1"></i>নিরাপদ পেমেন্ট</span>
+            <span class="trust-chip"><i class="fa-solid fa-rotate-left text-primary me-1"></i>৭ দিন রিটার্ন</span>
+          </div>
+
+          <!-- CTA -->
+          <button onclick="openOrderForm()" class="buy-now-btn w-full md:w-auto mb-3">
+            <i class="fa-solid fa-cart-shopping me-2"></i>এখনই অর্ডার করুন
+            <span class="ms-2 opacity-80">→</span>
+          </button>
+
+          <p class="text-xs text-gray-400 text-center md:text-left">
+            <i class="fa-solid fa-lock me-1"></i>ক্যাশ অন ডেলিভারি | নিরাপদ অর্ডার | দ্রুত ডেলিভারি
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="py-14 px-4 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="section-header">
+        <h2>পণ্যের বৈশিষ্ট্য</h2>
+        <p>কেন এই র‍্যাকেটটি সেরা?</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="feature-card">
+          <div class="feature-icon-wrap"><i class="fa-solid fa-bolt"></i></div>
+          <h3>শক্তিশালী শক</h3>
+          <p>উচ্চ ভোল্টেজ বৈদ্যুতিক শক মশা তাৎক্ষণিক নির্মূল করে</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap"><i class="fa-solid fa-battery-full"></i></div>
+          <h3>রিচার্জেবল</h3>
+          <p>বারবার চার্জ দিয়ে ব্যবহার করুন, আলাদা ব্যাটারি নেই</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>সম্পূর্ণ নিরাপদ</h3>
+          <p>ট্রিপল লেয়ার সেফটি নেট শিশু ও বৃদ্ধদের জন্য নিরাপদ</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap"><i class="fa-solid fa-feather"></i></div>
+          <h3>হালকা ওজন</h3>
+          <p>মাত্র ২০০ গ্রাম, দীর্ঘক্ষণ ব্যবহারেও ক্লান্তি নেই</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap"><i class="fa-solid fa-plug"></i></div>
+          <h3>USB চার্জিং</h3>
+          <p>যেকোনো USB পোর্ট থেকে সহজেই চার্জ দেওয়া যায়</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap"><i class="fa-solid fa-clock"></i></div>
+          <h3>দীর্ঘ ব্যাকআপ</h3>
+          <p>এক চার্জে ৮-১০ ঘণ্টা পর্যন্ত ব্যবহার করা যায়</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE GALLERY -->
+  <section class="py-14 px-4 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="section-header">
+        <h2>পণ্যের ছবি</h2>
+        <p>বিভিন্ন কোণ থেকে দেখুন</p>
+      </div>
+      <div class="gallery-layout">
+        <div class="gallery-main-img" id="galleryMain">
+          <img id="mainGalleryImg"
+            src="https://m.media-amazon.com/images/I/51R9rxqXDdL._AC_UF1000,1000_QL80_.jpg"
+            alt="Product main view" />
+        </div>
+        <div class="gallery-thumbs-col">
+          <img src="https://m.media-amazon.com/images/I/51R9rxqXDdL._AC_UF1000,1000_QL80_.jpg"
+            alt="view 1" class="gallery-thumb active" onclick="setMainImg(this)" />
+          <img src="https://m.media-amazon.com/images/I/61xJzKetaqL._AC_UF1000,1000_QL80_.jpg"
+            alt="view 2" class="gallery-thumb" onclick="setMainImg(this)" />
+          <img src="https://m.media-amazon.com/images/I/71o4VJOntBL._AC_UF1000,1000_QL80_.jpg"
+            alt="view 3" class="gallery-thumb" onclick="setMainImg(this)" />
+          <img src="https://m.media-amazon.com/images/I/61bBGtIStRL._AC_UF1000,1000_QL80_.jpg"
+            alt="view 4" class="gallery-thumb" onclick="setMainImg(this)" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY BUY -->
+  <section class="py-14 px-4 bg-gradient-to-br from-blue-50 to-indigo-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="section-header">
+        <h2>কেন কিনবেন?</h2>
+        <p>আমাদের পণ্য বেছে নেওয়ার কারণ</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="why-card">
+          <div class="why-icon-wrap"><i class="fa-solid fa-mosquito-net"></i></div>
+          <div>
+            <h3>মশামুক্ত ঘুম</h3>
+            <p>রাতের ঘুম নিরাপদ করুন। মশার যন্ত্রণা থেকে চিরতরে মুক্তি পান</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon-wrap"><i class="fa-solid fa-money-bill-wave"></i></div>
+          <div>
+            <h3>সাশ্রয়ী মূল্য</h3>
+            <p>কয়েল বা স্প্রে কেনার খরচ বাঁচান। একবার কিনলে বছরের পর বছর ব্যবহার</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon-wrap"><i class="fa-solid fa-leaf"></i></div>
+          <div>
+            <h3>পরিবেশবান্ধব</h3>
+            <p>রাসায়নিক মুক্ত। শিশু ও বৃদ্ধদের জন্য সম্পূর্ণ নিরাপদ সমাধান</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon-wrap"><i class="fa-solid fa-headset"></i></div>
+          <div>
+            <h3>২৪/৭ সাপোর্ট</h3>
+            <p>যেকোনো সমস্যায় আমরা সবসময় আপনার পাশে আছি</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="py-14 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="section-header">
+        <h2>ক্রেতাদের মতামত</h2>
+        <p>সত্যিকারের ক্রেতারা কী বলছেন</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="review-card">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="https://i.pravatar.cc/50?img=12" alt="r" class="w-11 h-11 rounded-full border-2 border-primary" />
+            <div>
+              <p class="font-bold text-sm">মোঃ রহিম উদ্দিন</p>
+              <p class="text-xs text-gray-400">ঢাকা, মিরপুর</p>
+            </div>
+            <div class="ms-auto flex text-yellow-400 text-xs">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">অসাধারণ পণ্য! মশার সমস্যা একদম শেষ হয়ে গেছে। বাচ্চারাও সহজে ব্যবহার করতে পারছে। দাম দেখে একটু সন্দেহ ছিল কিন্তু পণ্য দেখে মনে হলো আরো দাম হওয়া উচিত ছিল।</p>
+          <span class="text-xs text-green-600 mt-2 inline-block font-medium"><i class="fa-solid fa-circle-check me-1"></i>যাচাইকৃত ক্রেতা</span>
+        </div>
+
+        <div class="review-card">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="https://i.pravatar.cc/50?img=5" alt="r" class="w-11 h-11 rounded-full border-2 border-primary" />
+            <div>
+              <p class="font-bold text-sm">সুমাইয়া আক্তার</p>
+              <p class="text-xs text-gray-400">চট্টগ্রাম</p>
+            </div>
+            <div class="ms-auto flex text-yellow-400 text-xs">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">ডেলিভারি অনেক দ্রুত পেয়েছি! পণ্যটা সত্যিই চার্জ হয় এবং ভালো কাজ করে। কয়েল জ্বালানো বন্ধ করে দিয়েছি। সবাইকে রিকমেন্ড করছি।</p>
+          <span class="text-xs text-green-600 mt-2 inline-block font-medium"><i class="fa-solid fa-circle-check me-1"></i>যাচাইকৃত ক্রেতা</span>
+        </div>
+
+        <div class="review-card">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="https://i.pravatar.cc/50?img=33" alt="r" class="w-11 h-11 rounded-full border-2 border-primary" />
+            <div>
+              <p class="font-bold text-sm">আবু তালেব হোসেন</p>
+              <p class="text-xs text-gray-400">সিলেট</p>
+            </div>
+            <div class="ms-auto flex text-yellow-400 text-xs">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">বর্ষাকালে মশার উপদ্রব অনেক বেড়ে গিয়েছিল। এই র‍্যাকেট কিনে দারুণ উপকার হয়েছে। ব্যাটারি ব্যাকআপ ভালো।</p>
+          <span class="text-xs text-green-600 mt-2 inline-block font-medium"><i class="fa-solid fa-circle-check me-1"></i>যাচাইকৃত ক্রেতা</span>
+        </div>
+
+        <div class="review-card">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="https://i.pravatar.cc/50?img=47" alt="r" class="w-11 h-11 rounded-full border-2 border-primary" />
+            <div>
+              <p class="font-bold text-sm">নাসরিন বেগম</p>
+              <p class="text-xs text-gray-400">রাজশাহী</p>
+            </div>
+            <div class="ms-auto flex text-yellow-400 text-xs">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">আমার ৬ বছরের বাচ্চাও ব্যবহার করতে পারছে। একদম নিরাপদ। মশা মারতে এখন সে ভীষণ মজা পাচ্ছে! দাম অনেক কম কিন্তু মান অনেক ভালো।</p>
+          <span class="text-xs text-green-600 mt-2 inline-block font-medium"><i class="fa-solid fa-circle-check me-1"></i>যাচাইকৃত ক্রেতা</span>
+        </div>
+
+        <div class="review-card">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="https://i.pravatar.cc/50?img=22" alt="r" class="w-11 h-11 rounded-full border-2 border-primary" />
+            <div>
+              <p class="font-bold text-sm">মোঃ কামাল হোসেন</p>
+              <p class="text-xs text-gray-400">ঢাকা, উত্তরা</p>
+            </div>
+            <div class="ms-auto flex text-yellow-400 text-xs">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">COD-তে অর্ডার করেছিলাম। মাত্র ২ দিনে পেয়েছি। প্যাকেজিং সুন্দর ছিল। Gadget Valley-এর সার্ভিস অনেক ভালো।</p>
+          <span class="text-xs text-green-600 mt-2 inline-block font-medium"><i class="fa-solid fa-circle-check me-1"></i>যাচাইকৃত ক্রেতা</span>
+        </div>
+
+        <div class="review-card">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="https://i.pravatar.cc/50?img=60" alt="r" class="w-11 h-11 rounded-full border-2 border-primary" />
+            <div>
+              <p class="font-bold text-sm">তানিয়া আফরিন</p>
+              <p class="text-xs text-gray-400">খুলনা</p>
+            </div>
+            <div class="ms-auto flex text-yellow-400 text-xs">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">৩টি কিনেছি – নিজের জন্য এবং আত্মীয়দের গিফট করার জন্য। সবাই খুব পছন্দ করেছে। আবারও কিনব।</p>
+          <span class="text-xs text-green-600 mt-2 inline-block font-medium"><i class="fa-solid fa-circle-check me-1"></i>যাচাইকৃত ক্রেতা</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SECTION -->
+  <section class="py-14 px-4 bg-gray-50">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="section-header">
+        <h2>প্রোডাক্ট ভিডিও</h2>
+        <p>পণ্যটি কীভাবে কাজ করে দেখুন</p>
+      </div>
+      <div class="video-placeholder-box" id="videoBox" onclick="loadVideo()">
+        <div class="play-circle">
+          <i class="fa-solid fa-play text-white text-xl ms-1"></i>
+        </div>
+        <p class="text-gray-500 text-sm mt-4 font-medium">ভিডিও দেখতে ক্লিক করুন</p>
+        <div id="videoFrame" class="hidden w-full mt-4">
+          <iframe width="100%" height="300" src="" id="ytFrame" frameborder="0" allowfullscreen class="rounded-xl"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-14 px-4 bg-white">
+    <div class="max-w-3xl mx-auto">
+      <div class="section-header">
+        <h2>সাধারণ প্রশ্নাবলী</h2>
+        <p>আপনার প্রশ্নের উত্তর এখানে</p>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span><i class="fa-solid fa-plug me-2 text-primary"></i>কীভাবে চার্জ দেব?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer">USB কেবল দিয়ে যেকোনো চার্জার বা পাওয়ার ব্যাংকে লাগিয়ে চার্জ দিতে পারবেন। সম্পূর্ণ চার্জ হতে ২-৩ ঘণ্টা সময় লাগে।</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span><i class="fa-solid fa-shield-halved me-2 text-primary"></i>এটি কি নিরাপদ?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer">হ্যাঁ, সম্পূর্ণ নিরাপদ। ট্রিপল লেয়ার সেফটি নেট ব্যবহার করা হয়েছে। বাটন না চাপলে কোনো ভোল্টেজ তৈরি হয় না।</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span><i class="fa-solid fa-battery-full me-2 text-primary"></i>ব্যাটারি ব্যাকআপ কত?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer">এক চার্জে ৮-১০ ঘণ্টা স্ট্যান্ডবাই এবং সক্রিয় ব্যবহারে ৪-৫ ঘণ্টা পর্যন্ত চলে।</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span><i class="fa-solid fa-money-bill me-2 text-primary"></i>COD পাওয়া যাবে?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer">হ্যাঁ, সারা বাংলাদেশে Cash on Delivery (COD) সুবিধা আছে। পণ্য হাতে পেয়ে টাকা দিন।</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span><i class="fa-solid fa-truck me-2 text-primary"></i>ডেলিভারি কতদিন লাগবে?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer">ঢাকার মধ্যে ১-২ দিন, ঢাকার বাইরে ২-৩ কার্যদিবসের মধ্যে ডেলিভারি দেওয়া হয়।</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BADGES -->
+  <section class="py-14 px-4 bg-gradient-to-br from-primary to-blue-700 text-white">
+    <div class="max-w-4xl mx-auto text-center mb-8">
+      <h2 class="text-2xl font-bold">আমাদের প্রতিশ্রুতি</h2>
+      <p class="text-blue-200 text-sm mt-1">আমরা আপনার বিশ্বাসের যোগ্য</p>
+    </div>
+    <div class="max-w-4xl mx-auto grid grid-cols-3 gap-4">
+      <div class="trust-badge-card">
+        <i class="fa-solid fa-truck-fast text-3xl mb-3 text-yellow-300"></i>
+        <h3 class="font-bold text-lg">দ্রুত ডেলিভারি</h3>
+        <p class="text-sm text-blue-200">সারা বাংলাদেশে ২-৩ দিনে</p>
+      </div>
+      <div class="trust-badge-card">
+        <i class="fa-solid fa-lock text-3xl mb-3 text-yellow-300"></i>
+        <h3 class="font-bold text-lg">নিরাপদ পেমেন্ট</h3>
+        <p class="text-sm text-blue-200">COD / bKash / Nagad</p>
+      </div>
+      <div class="trust-badge-card">
+        <i class="fa-solid fa-medal text-3xl mb-3 text-yellow-300"></i>
+        <h3 class="font-bold text-lg">অরিজিনাল পণ্য</h3>
+        <p class="text-sm text-blue-200">১০০% আসল পণ্যের গ্যারান্টি</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-10 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
+            <i class="fa-solid fa-bolt text-white text-sm"></i>
+          </div>
+          <span class="text-lg font-bold">Gadget Valley</span>
+        </div>
+        <p class="text-gray-400 text-sm">বাংলাদেশের সেরা গ্যাজেট শপ। মানসম্পন্ন পণ্য সাশ্রয়ী মূল্যে।</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-3 text-gray-200">যোগাযোগ</h4>
+        <div class="space-y-2 text-sm text-gray-400">
+          <p><i class="fa-solid fa-phone me-2 text-primary"></i>01876-505581</p>
+          <p><i class="fa-brands fa-facebook me-2 text-primary"></i>
+            <a href="https://facebook.com/gadgetvalleybd" target="_blank" class="hover:text-primary transition">facebook.com/gadgetvalleybd</a>
+          </p>
+          <p><i class="fa-brands fa-whatsapp me-2 text-primary"></i>01876-505581</p>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold mb-3 text-gray-200">ডেলিভারি চার্জ</h4>
+        <div class="space-y-2 text-sm text-gray-400">
+          <p><i class="fa-solid fa-location-dot me-2 text-primary"></i>ঢাকার ভিতরে: ৳৭০</p>
+          <p><i class="fa-solid fa-location-dot me-2 text-primary"></i>ঢাকার বাইরে: ৳১৩০</p>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 pt-5 text-center text-sm text-gray-500">
+      <p>© 2025 Gadget Valley. সর্বস্বত্ব সংরক্ষিত।</p>
+    </div>
+  </footer>
+
+  <!-- STICKY BOTTOM BAR (mobile) -->
+  <div class="sticky-bottom-bar" id="stickyBar">
+    <div class="flex items-center gap-3 max-w-sm mx-auto">
+      <div>
+        <p class="text-xs text-gray-400">মূল্য</p>
+        <p class="text-xl font-black text-primary leading-none">৳৬৯৯</p>
+      </div>
+      <button onclick="openOrderForm()" class="flex-1 bg-primary text-white py-3 rounded-xl font-bold text-sm shadow-lg pulse-btn">
+        <i class="fa-solid fa-cart-shopping me-2"></i>এখনই অর্ডার করুন
+      </button>
+    </div>
+  </div>
+
+  <!-- SCROLL TO TOP -->
+  <button id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="scroll-top-btn" title="উপরে যান">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/8801876505581" target="_blank" class="whatsapp-float" title="WhatsApp">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+  </a>
+
+  <!-- ORDER MODAL -->
+  <div id="orderModal" class="modal-overlay" style="display:none;">
+    <div class="modal-container" id="modalBox">
+      <div class="modal-head">
+        <div>
+          <h2 class="text-lg font-bold text-white">অর্ডার ফর্ম</h2>
+          <p class="text-blue-200 text-xs">তথ্য পূরণ করে অর্ডার নিশ্চিত করুন</p>
+        </div>
+        <button onclick="closeOrderForm()" class="text-white hover:text-red-300 transition text-2xl leading-none">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-scroll-body">
+        <!-- Product Row -->
+        <div class="order-product-row">
+          <img src="https://m.media-amazon.com/images/I/51R9rxqXDdL._AC_UF1000,1000_QL80_.jpg"
+            alt="product" class="w-16 h-16 object-contain rounded-lg border border-gray-100 bg-gray-50" />
+          <div class="flex-1">
+            <p class="font-bold text-sm text-gray-800">Electric Mosquito Swatter</p>
+            <p class="text-xs text-gray-400">সাদা রঙ | রিচার্জেবল</p>
+            <p class="text-primary font-black text-xl">৳৬৯৯</p>
+          </div>
+        </div>
+
+        <!-- Qty & Color Row -->
+        <div class="grid grid-cols-2 gap-3">
+          <div class="form-field">
+            <label class="field-label">পরিমাণ</label>
+            <div class="qty-ctrl">
+              <button class="qty-btn-ctrl" onclick="changeQty(-1)"><i class="fa-solid fa-minus"></i></button>
+              <span id="qtyDisplay" class="qty-num">1</span>
+              <button class="qty-btn-ctrl" onclick="changeQty(1)"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="field-label">রঙ</label>
+            <select id="colorSelect" class="field-input">
+              <option value="White">সাদা</option>
+              <option value="Blue">নীল</option>
+              <option value="Black">কালো</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Name -->
+        <div class="form-field">
+          <label class="field-label">আপনার নাম <span class="text-red-500">*</span></label>
+          <input type="text" id="custName" class="field-input" placeholder="পুরো নাম লিখুন" />
+        </div>
+
+        <!-- Phone -->
+        <div class="form-field">
+          <label class="field-label">মোবাইল নম্বর <span class="text-red-500">*</span></label>
+          <input type="tel" id="custPhone" class="field-input" placeholder="01XXXXXXXXX" maxlength="11" />
+        </div>
+
+        <!-- Address -->
+        <div class="form-field">
+          <label class="field-label">সম্পূর্ণ ঠিকানা <span class="text-red-500">*</span></label>
+          <textarea id="custAddress" class="field-input resize-none" rows="2" placeholder="বাড়ি/ফ্ল্যাট, রোড, এলাকা, জেলা…"></textarea>
+        </div>
+
+        <!-- Shipping -->
+        <div class="form-field">
+          <label class="field-label">ডেলিভারি এলাকা <span class="text-red-500">*</span></label>
+          <select id="shippingArea" class="field-input" onchange="updateTotal()">
+            <option value="70">ঢাকার ভিতরে — ৳৭০</option>
+            <option value="130">ঢাকার বাইরে — ৳১৩০</option>
+          </select>
+        </div>
+
+        <!-- Payment -->
+        <div class="form-field">
+          <label class="field-label">পেমেন্ট পদ্ধতি <span class="text-red-500">*</span></label>
+          <div class="payment-grid">
+            <label class="pay-opt">
+              <input type="radio" name="payment" value="COD" checked onchange="toggleMobilePayment(this.value)" />
+              <span class="pay-opt-label">
+                <i class="fa-solid fa-money-bill-wave text-green-600"></i> COD
+              </span>
+            </label>
+            <label class="pay-opt">
+              <input type="radio" name="payment" value="Bkash" onchange="toggleMobilePayment(this.value)" />
+              <span class="pay-opt-label">
+                <span class="text-pink-600 font-bold">b</span>Kash
+              </span>
+            </label>
+            <label class="pay-opt">
+              <input type="radio" name="payment" value="Nagad" onchange="toggleMobilePayment(this.value)" />
+              <span class="pay-opt-label">
+                <i class="fa-solid fa-mobile text-orange-500"></i> Nagad
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Mobile Payment Extra Fields -->
+        <div id="mobilePayFields" class="mobile-pay-extra" style="display:none; overflow:hidden; max-height:0; transition:max-height 0.4s ease;">
+          <div class="pay-number-box">
+            <i class="fa-solid fa-circle-info me-1 text-primary"></i>
+            পেমেন্ট পাঠান এই নম্বরে: <strong class="text-primary text-base">01876-505581</strong>
+          </div>
+          <div class="form-field">
+            <label class="field-label">ট্রানজেকশন আইডি <span class="text-red-500">*</span></label>
+            <input type="text" id="transactionId" class="field-input" placeholder="Transaction ID লিখুন" />
+          </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="price-summary-box">
+          <div class="summary-row">
+            <span>পণ্যের মূল্য</span>
+            <span>৳৬৯৯ × <span id="summaryQty">1</span></span>
+          </div>
+          <div class="summary-row">
+            <span>সাবটোটাল</span>
+            <span id="subtotalDisplay">৳৬৯৯</span>
+          </div>
+          <div class="summary-row">
+            <span>ডেলিভারি চার্জ</span>
+            <span id="shippingDisplay">৳৭০</span>
+          </div>
+          <div class="summary-row summary-total">
+            <span>মোট</span>
+            <span id="grandTotalDisplay">৳৭৬৯</span>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <button id="placeOrderBtn" onclick="placeOrder()" class="submit-order-btn">
+          <i class="fa-solid fa-check-circle me-2"></i>অর্ডার নিশ্চিত করুন
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUCCESS MODAL -->
+  <div id="successModal" class="modal-overlay" style="display:none;">
+    <div class="success-modal-box">
+      <div class="text-center mb-4">
+        <div class="success-checkmark">
+          <i class="fa-solid fa-circle-check text-green-500 text-5xl"></i>
+        </div>
+        <h2 class="text-xl font-bold text-gray-800 mt-4">অর্ডার সফল হয়েছে!</h2>
+        <p class="text-gray-500 text-sm mt-2">আমাদের টিম শীঘ্রই আপনার সাথে যোগাযোগ করবে।</p>
+      </div>
+      <div class="bg-blue-50 border border-blue-100 rounded-xl p-3 text-sm text-gray-700 mb-4">
+        <i class="fa-solid fa-phone me-1 text-primary"></i>
+        যেকোনো প্রশ্নে কল করুন: <strong class="text-primary">01876-505581</strong>
+      </div>
+      <button onclick="closeSuccess()" class="w-full bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary-dark transition">
+        ঠিক আছে
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+  </html>
